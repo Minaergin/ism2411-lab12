@@ -1,9 +1,32 @@
 
 # ISM2411 Lab 12
 # Name: Mina Ergin
-
 import csv
 from datetime import datetime
+
+# I used Ai to help me with the contents 
+# I needed help with in this lab.
+
+# Reflection questions
+# Question 1 
+# I think Python is more useful while 
+# working with larger data because it 
+# automatically handles information such 
+# such as as organizing and filtering 
+# without the need for manual input.
+# WHile Excel is more useful for smaller data
+# because it is easier to visualize and
+# and make quick changes in data. 
+
+# Question 2
+# I think a retail store would benefit the most 
+# from using append mode to Log their sales data
+# for example keep track of their daily sales totals
+# after closing each night. Append mode allows them 
+# to add new data without overwriting previous records,
+# which is essential for maintaining a historical record 
+# of sales. It would be easier to compare sales over time.
+
 
 # Exercise 1: Setup
 print("EXERCISE 1: SETUP")
