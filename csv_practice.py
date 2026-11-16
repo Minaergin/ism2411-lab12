@@ -103,3 +103,28 @@ with open("data/sales.csv", "r", newline="") as infile:
 
 print(f"Original rows: {original_count}")
 print(f"Cleaned rows written: {cleaned_count}")
+
+
+
+# Exercise 6: csv.DictReader
+print("\nEXERCISE 6: DICTREADER")
+
+# csv.reader is useful when column positions are known and consistent.
+# csv.DictReader is better when accessing data using column names.
+
+dict_total_revenue = 0
+
+with open("data/sales.csv", "r", newline="") as file:
+    reader = csv.DictReader(file)
+
+    for row in reader:
+        product = row["product"]
+        price = float(row["price"])
+        quantity = int(row["quantity"])
+
+        total = price * quantity
+        dict_total_revenue += total
+
+        print(f"{product}: ${total:.2f}")
+
+print(f"DictReader Total Revenue: ${dict_total_revenue:.2f}")
